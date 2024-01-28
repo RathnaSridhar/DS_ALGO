@@ -1,5 +1,7 @@
+
 Feature: Checking the getstarted button for all the modules
 
+@Regression
 Scenario: The user is able to navigate to the home page
 Given User is opens the DS-Algo app
 When User clicks on the Get Started button

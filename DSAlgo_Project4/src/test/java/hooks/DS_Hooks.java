@@ -5,6 +5,7 @@ import java.io.ByteArrayInputStream;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import driverfactory.Driverfactory;
 import io.cucumber.java.After;
@@ -19,12 +20,14 @@ public class DS_Hooks {
 	
 	
 	@Before
-	public void setup() {
+	public void setup(Scenario scenario) {
 		df = new Driverfactory();
-		Driverfactory.InitializeDriver("chrome");	
+		Driverfactory.InitializeDriver("Chrome");	
 		Driverfactory.driver.get("https://dsportalapp.herokuapp.com/");
+		System.out.println("Executing for scenario "+scenario.getName());
 		LoggerLoad.Info("Logged in to the DS Algo App");
-		
+//		ChromeOptions capabilities = new ChromeOptions();
+//		capabilities.setAcceptInsecureCerts(true);
 	}
 	
 	@After

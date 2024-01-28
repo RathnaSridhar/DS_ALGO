@@ -1,3 +1,4 @@
+
 Feature: The user test the functionalities of the Queue page in the DS Algo application
 
 Background: The user logs in to the application to verify the functionalities 
@@ -6,6 +7,7 @@ Background: The user logs in to the application to verify the functionalities
 	When User is on the login page, user enters the valid email id and password
 	And User clicks on the Queue Get started button and user is on the Queue page
 	
+	@Smoke
 	Scenario Outline: User checks the functionality of the Implementation of queue in Python page 
   When User clicks on the Implementation of queue in Python and user is in that page
   And User clicks on the try here button
@@ -16,6 +18,7 @@ Background: The user logs in to the application to verify the functionalities
   |sheetname	|	rownum	|
 	|	Data			|	3				|
 	
+	@Smoke
 	Scenario Outline: User checks the functionality of the Implementation using collection.deque page 
   When User clicks on the Implementation using collection.deque in Python and user is in that page
   And User clicks on the try here button
@@ -26,7 +29,8 @@ Background: The user logs in to the application to verify the functionalities
   |sheetname	|	rownum	|
 	|	Data			|	3				|
 	
-		Scenario Outline: User checks the functionality of the Implementation using array page 
+	@Smoke
+		Scenario Outline: User checks the functionality of the Implementation using array page
   When User clicks on the Implementation using array in Python and user is in that page
   And User clicks on the try here button
   Then User inputs the valid python code in the text editor box from the xlsheet sheet "<sheetname>" and rownumber <rownum>
@@ -36,7 +40,8 @@ Background: The user logs in to the application to verify the functionalities
   |sheetname	|	rownum	|
 	|	Data			|	3				|
 	
-		Scenario Outline: User checks the functionality of the Queue Operations page 
+	@Smoke
+		Scenario Outline: User checks the functionality of the Queue Operations page
   When User clicks on the Queue Operations in Python and user is in that page
   And User clicks on the try here button
   Then User inputs the valid python code in the text editor box from the xlsheet sheet "<sheetname>" and rownumber <rownum>

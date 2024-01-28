@@ -1,4 +1,4 @@
-@Array @all
+
 Feature: Verifying the Array functionalities in the DS Algo app
 
 	Background: The user logsin to the application to verify the functionalities
@@ -7,7 +7,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
 	When User is on the login page, user enters the valid email id and password
 	Then In the home page user clicks the get started button of Array
 	
-  @Array_01 @all
+  @Smoke
   Scenario Outline: User checks functionalities of the Arrays in Python
     When User clicks on the Arrays in Python link
     Then User navigates to the try editor page
@@ -18,7 +18,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
     | sheetname	|	rownum|
     |	Data			|		2		|
 
-	@Array_02 @all
+	@Smoke
   Scenario Outline: User checks the functionalities on the Arrays using list
     When User clicks on the Arrays using list link
     Then User navigates to the try editor page
@@ -29,7 +29,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
       | sheetname	|	rownum	|
       |	 Data			|	3			|
   
-  @Array_03 @all 
+  @Smoke
   Scenario Outline: The user checks the functionalities of the Basic operation list page
   When User clicks on the Basic opertaion list page
   Then User navigates to the try editor page
@@ -40,7 +40,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
   |sheetname	|	rownum	|	
   |	Data			|		4			|
   
-  @Array_04 @all
+ @Smoke
   Scenario Outline: The user checks the functionalities of the Appplications of Array page
   When User clicks on the Applications of Array link
   Then User navigates to the try editor page
@@ -51,7 +51,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
   |	sheetname	|	rownum|
   |	Data			|	4			|
   
-  @Array_05 @all
+  @Smoke 
   Scenario Outline: The user test the Practice sections of the Array page
  	When User clicks on the Arrays in Python link
  	Then User click on the Practice question link
@@ -63,7 +63,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
   |	sheetname	|	rownum|
   |	Data			|	5			| 
   
-  @Array_06 @all
+  @Smoke
  Scenario Outline: The user test the Practice sections of the Array page
  	When User clicks on the Arrays in Python link
  	Then User click on the Practice question link
@@ -75,7 +75,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
   |	sheetname	|	rownum|
   |	Data			|	5		| 
   
-  @Array_07 @all
+ @Smoke 
   Scenario Outline: The user test the Practice sections of the Array page
  	When User clicks on the Arrays in Python link
  	Then User click on the Practice question link
@@ -87,7 +87,7 @@ Feature: Verifying the Array functionalities in the DS Algo app
   |	sheetname	|	rownum|
   |	Data			|	5			| 
   
-  @Array_08 @all
+  @Smoke 
   Scenario Outline: The user test the Practice sections of the Array page
  	When User clicks on the Arrays in Python link
  	Then User click on the Practice question link

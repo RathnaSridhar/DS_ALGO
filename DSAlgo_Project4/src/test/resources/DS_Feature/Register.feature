@@ -1,6 +1,7 @@
 
 Feature: Registering to the DS-Algo app
 
+@Regression
 Scenario Outline: Register with invalid credentials to check the error displayed
 Given User is on the Register Page
 When User leaves some fields "<Username>", "<Password1>" and "<Password2>" empty  

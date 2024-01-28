@@ -1,7 +1,8 @@
+
 Feature: The iser in navigating to the Data Introduction page 
 and tries to input code in the Try here tab
 
- 	@DataIntro
+ @Smoke
   Scenario: User navigates to the Data Introduction page
     Given The user is already logged in and is on the homepage
     When User clicks the get started button
@@ -10,7 +11,8 @@ and tries to input code in the Try here tab
     When User enters the Python code from xlsheet
     And User clicks on the run button
     Then User can see the the output printed
-   @DataIntro 
+  
+  @Smoke
  	Scenario Outline: Verifying data structure text box editor with invalid python code
  	Given The user is already logged in and is on the homepage
     When User clicks the get started button

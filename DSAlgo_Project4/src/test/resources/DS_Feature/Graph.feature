@@ -1,3 +1,4 @@
+
 Feature: The user test the functionalities of the Graph page in the DS Algo application
 
 Background:The user logs in to the application to verify the functionalities 
@@ -6,6 +7,7 @@ Background:The user logs in to the application to verify the functionalities
 	When User is on the login page, user enters the valid email id and password
 	And User clicks on the Graph Get started button and user is on the Graph page
 	
+	@Smoke
 	Scenario Outline: User checks the functionality of the Graph
   When User clicks on the Graph and user is in that page
   And User click on the try here button to go to try
@@ -16,6 +18,7 @@ Background:The user logs in to the application to verify the functionalities
   |sheetname	|	rownum	|
 	|	Data			|	3				|
 	
+	@Smoke
 	Scenario Outline: User checks the functionality of the GraphRepresentations
   When User clicks on the GraphRepresentations and user is in that page
   And User click on the try here button to go to try
